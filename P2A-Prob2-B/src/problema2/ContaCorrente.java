@@ -4,6 +4,9 @@ package problema2;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import observer.Subject;
+import modelo.Servico;
+import observer.Observer;
 
 /*
  * Esta classe oferece as funcionalidades básicas para atender ao Problema 2.
@@ -13,12 +16,15 @@ import java.util.List;
  *
  * @author marcel
  */
-public class ContaCorrente {
+public class ContaCorrente implements Subject{
     private int numero;
     private int agencia;
     private Cliente cliente;
     private double saldo = 0;
     private List<Operacao> operacoes = new ArrayList();
+    
+    //Observer
+    private ArrayList<Observer> observers = new ArrayList();
 
     public ContaCorrente(int numero, int agencia) {
         this.setNumero(numero);
@@ -80,7 +86,19 @@ public class ContaCorrente {
     }
     
     @Override
-    public String toString(){
-        return this.getChave();
+    public void notifyObservers() {
+        for (Observer observer : this.observers) {
+            observer.update();
+        }
+    }
+
+    @Override
+    public void removeObserver(Observer observer) {
+        this.observers.remove(observer);
+    }
+
+    @Override
+    public void addObserver(Observer observer) {
+        this.observers.add(observer);
     }
 }
