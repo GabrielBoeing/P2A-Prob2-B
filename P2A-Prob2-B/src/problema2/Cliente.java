@@ -58,6 +58,14 @@ public abstract class Cliente {
     public void setTelFixo(String telFixo) {
         this.telFixo = telFixo;
     }
+
+    public HashMap<String, ContaCorrente> getContas() {
+        return contas;
+    }
+
+    public void setContas(HashMap<String, ContaCorrente> contas) {
+        this.contas = contas;
+    }
     
     
     

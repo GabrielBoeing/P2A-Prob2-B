@@ -27,16 +27,7 @@ public class ContaCorrente {
 
     public String getChave(){
         return String.valueOf(agencia)+"-"+String.valueOf(numero);
-    }
-    
-    public void sacar(double valor){
-        if (valor > this.getSaldo()){
-            throw new IllegalArgumentException("Saldo insuficiente para o saque");
-        }
-        Operacao oper = new Operacao(valor,this.getSaldo(),TipoOperacao.SAIDA,new Date(),this);
-        operacoes.add(oper);
-        this.saldo -= valor;
-    }
+    }    
     
     public void depositar(double valor){
         Operacao oper = new Operacao(valor,this.getSaldo(),TipoOperacao.ENTRADA,new Date(),this);

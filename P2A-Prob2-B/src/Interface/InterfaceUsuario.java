@@ -37,6 +37,7 @@ public class InterfaceUsuario extends javax.swing.JFrame {
         txtCelularPF = new javax.swing.JTextField();
         txtCPFPF = new javax.swing.JTextField();
         txtTelefonePF = new javax.swing.JTextField();
+        jToggleButton1 = new javax.swing.JToggleButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
@@ -92,6 +93,13 @@ public class InterfaceUsuario extends javax.swing.JFrame {
             }
         });
 
+        jToggleButton1.setText("jToggleButton1");
+        jToggleButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jToggleButton1MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -110,6 +118,10 @@ public class InterfaceUsuario extends javax.swing.JFrame {
                     .addComponent(txtTelefonePF, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtNomePF, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(351, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(352, Short.MAX_VALUE)
+                .addComponent(jToggleButton1)
+                .addGap(265, 265, 265))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,7 +142,9 @@ public class InterfaceUsuario extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel3)
                     .addComponent(txtTelefonePF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(177, Short.MAX_VALUE))
+                .addGap(72, 72, 72)
+                .addComponent(jToggleButton1)
+                .addContainerGap(106, Short.MAX_VALUE))
         );
 
         tpPrincipal.addTab("Cadastrar Pessoa Fisica", jPanel1);
@@ -333,6 +347,10 @@ public class InterfaceUsuario extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btSaqueActionPerformed
 
+    private void jToggleButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jToggleButton1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jToggleButton1MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -388,6 +406,7 @@ public class InterfaceUsuario extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JTabbedPane tpPrincipal;
     private javax.swing.JTextField txtCNPJPJ;
     private javax.swing.JTextField txtCPFPF;
