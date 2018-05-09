@@ -1,0 +1,9 @@
+Padrão de projeto Observer
+
+Subject
+
+No projeto o papel do subject é representado pela classe da conta, que irá refletir nos observadores mudanças no seu panorama.
+
+Observer
+
+No projeto, as classes que desempenham a função de observadores são as classes de serviço, que vão se atualizar de acordo com as mudanças da conta.
