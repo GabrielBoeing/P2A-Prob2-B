@@ -1,9 +1,14 @@
-Padr�o de projeto Observer
+Padrão de projeto Observer
 
 Subject
 
-No projeto o papel do subject � representado pela classe da conta, que ir� refletir nos observadores mudan�as no seu panorama.
+No projeto o papel do subject é representado pela classe da conta, que irá refletir nos observadores mudanças no seu panorama.
 
 Observer
 
-No projeto, as classes que desempenham a fun��o de observadores s�o as classes de servi�o, que v�o se atualizar de acordo com as mudan�as da conta.
+No projeto, as classes que desempenham a função de observadores são as classes de serviço, que vão se atualizar de acordo com as mudanças da conta.
+
+--> Prof. Marcel: a classe Servico deveria ser abstrata, pois ela não tem os elementos suficientes para ser um serviço.
+--> Prof. Marcel: as subclasses de Servico não reimplementaram o método update para exibir a mensagem solicitada. A chamada de toString() faz com que o nome da classe (getClass) seja apresentado.
+--> Prof. Marcel: método notifyObservers não é chamado pela própria conta: "classes de serviço, que vão se atualizar de acordo com as mudanças da conta."
+--> Prof. Marcel: os serviços (observadores) não são associados a uma conta
