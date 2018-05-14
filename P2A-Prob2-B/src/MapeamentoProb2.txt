@@ -12,3 +12,9 @@ No projeto, as classes que desempenham a função de observadores são as classe
 --> Prof. Marcel: as subclasses de Servico não reimplementaram o método update para exibir a mensagem solicitada. A chamada de toString() faz com que o nome da classe (getClass) seja apresentado.
 --> Prof. Marcel: método notifyObservers não é chamado pela própria conta: "classes de serviço, que vão se atualizar de acordo com as mudanças da conta."
 --> Prof. Marcel: os serviços (observadores) não são associados a uma conta
+
+--> Prof. Marcel: Cada problema recebe uma nota de 0,0 a 3,0.
+A soma dos 3 problemas mais a avaliação sobre a colaboração no trabalho em equipe define a nota de cada aluno.
+Problema - Notas Equipe B
+1	    2,4
+2	    2,4
